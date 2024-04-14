@@ -1,7 +1,4 @@
 :root {
-  --primary-blue: rgb(0, 0, 255);
-  --secondary-blue: rgb(96, 96, 182);
-
   --text-primary-light: black;
   --text-primary-dark: white;
 
@@ -13,9 +10,6 @@
 
   --bg-secondary-light: rgb(212, 212, 212);
   --bg-secondary-dark: rgb(34, 34, 34);
-
-  --bg-navbar-light: rgb(104, 104, 255);
-  --bg-navbar-dark: rgb(29, 29, 58);
 }
 
 .light-theme {
@@ -23,7 +17,6 @@
   --text-secondary: var(--text-secondary-light);
   --bg-primary: var(--bg-primary-light);
   --bg-secondary: var(--bg-secondary-light);
-  --bg-navbar: var(--bg-navbar-light);
 }
 
 .dark-theme {
@@ -31,7 +24,6 @@
   --text-secondary: var(--text-secondary-dark);
   --bg-primary: var(--bg-primary-dark);
   --bg-secondary: var(--bg-secondary-dark);
-  --bg-navbar: var(--bg-navbar-dark);
 }
 
 * {
