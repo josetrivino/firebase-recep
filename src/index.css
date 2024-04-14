@@ -1,8 +1,8 @@
 .box {
   max-width: 760px;
-  width: 88vw;
+  width: 90vw;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   box-sizing: border-box;
   font-family: sans-serif;
   text-transform: uppercase;
