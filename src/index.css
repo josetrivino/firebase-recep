@@ -126,6 +126,7 @@ input {
   border-radius: 10px;
   box-sizing: border-box;
   background-color: #f9f9f9;
+  -webkit-appearance: none;
 }
 .dark-theme input {
   background-color: #eeeeee;
