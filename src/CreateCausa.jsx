@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { db } from "./firebase.js";
 import { collection, addDoc } from "firebase/firestore";
+import CreateNotificacion from "./CreateNotificacion"; // Importa el componente CreateNotificacion
 
 const CreateCausa = () => {
   const [nuevaCausa, setNuevaCausa] = useState({

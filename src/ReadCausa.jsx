@@ -1,16 +1,10 @@
 import { useState, useEffect } from "react";
 import { db } from "./firebase.js";
-import {
-  collection,
-  getDocs,
-  addDoc,
-  updateDoc,
-  deleteDoc,
-  doc,
-} from "firebase/firestore";
+import { collection, getDocs, deleteDoc, doc } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import UpdateIcon from "@mui/icons-material/Update";
 import DeleteIcon from "@mui/icons-material/Delete";
+import NotificationAddIcon from "@mui/icons-material/NotificationAdd";
 
 const ReadCausa = () => {
   const [causas, setCausas] = useState([]);
@@ -96,6 +90,11 @@ const ReadCausa = () => {
                 <Link to={`/actualizar-causa/${causa.id}`}>
                   <button className="btn-causa">
                     <UpdateIcon fontSize="small" />
+                  </button>
+                </Link>
+                <Link to={`/agregar-notificacion/${causa.id}`}>
+                  <button className="btn-causa">
+                    <NotificationAddIcon fontSize="small" />
                   </button>
                 </Link>
                 <button

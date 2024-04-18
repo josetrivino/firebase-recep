@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { ThemeContext } from "./ThemeContext";
 import ReadCausa from "./ReadCausa";
 import CreateCausa from "./CreateCausa";
+import CreateNotificacion from "./CreateNotificacion";
 import UpdateCausa from "./UpdateCausa";
 import Navbar from "./Navbar";
 import ShowCausa from "./ShowCausa";
@@ -21,6 +22,10 @@ const App = () => {
           <Route path="/causas/:id" element={<ShowCausa />} />
           <Route path="/causas" element={<ReadCausa />} />
           <Route path="/agregar-causa" element={<CreateCausa />} />
+          <Route
+            path="/agregar-notificacion/:id"
+            element={<CreateNotificacion />}
+          />
           <Route path="/actualizar-causa/:id" element={<UpdateCausa />} />
         </Routes>
       </div>
