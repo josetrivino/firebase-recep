@@ -159,3 +159,22 @@ select {
   color: #dddddd;
 }
 /* END AGREGAR CAUSA STYLES */
+
+.notificacion-card {
+  padding: 2rem;
+  margin: 1rem 0;
+  background-color: #dddddd;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.dark-theme .notificacion-card {
+  background-color: #2a2a2a;
+}
+.notificacion-card .notificacion-text-label {
+  font-size: 0.7rem;
+}
+.notificacion-card .notificacion-text-data {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}

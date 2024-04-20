@@ -58,8 +58,9 @@ const ActualizarCausa = () => {
         {causa ? (
           <form className="form-agregar-causa" onSubmit={handleSubmit}>
             <div className="agregar-causa-item">
-              <label>Materia:</label>
+              <label for="materia">Materia:</label>
               <input
+                id="materia"
                 type="text"
                 name="materia"
                 value={nuevaCausa?.materia || ""}
@@ -67,8 +68,9 @@ const ActualizarCausa = () => {
               />
             </div>
             <div className="agregar-causa-item">
-              <label>Tribunal:</label>
+              <label for="tribunal">Tribunal:</label>
               <input
+                id="tribunal"
                 type="text"
                 name="tribunal"
                 value={nuevaCausa?.tribunal ?? ""}
@@ -76,8 +78,9 @@ const ActualizarCausa = () => {
               />
             </div>
             <div className="agregar-causa-item">
-              <label>ROL:</label>
+              <label for="rol">ROL:</label>
               <input
+                id="rol"
                 type="text"
                 name="rol"
                 value={nuevaCausa?.rol ?? ""}
@@ -85,8 +88,9 @@ const ActualizarCausa = () => {
               />
             </div>
             <div className="agregar-causa-item">
-              <label>Caratulado:</label>
+              <label for="caratulado">Caratulado:</label>
               <input
+                id="caratulado"
                 type="text"
                 name="caratulado"
                 value={nuevaCausa?.caratulado ?? ""}
@@ -94,8 +98,9 @@ const ActualizarCausa = () => {
               />
             </div>
             <div className="agregar-causa-item">
-              <label>Mandante:</label>
+              <label for="mandante">Mandante:</label>
               <input
+                id="mandante"
                 type="text"
                 name="mandante"
                 value={nuevaCausa?.mandante ?? ""}
@@ -103,8 +108,9 @@ const ActualizarCausa = () => {
               />
             </div>
             <div className="agregar-causa-item">
-              <label>Ejecutivo:</label>
+              <label for="ejecutivo">Ejecutivo:</label>
               <input
+                id="ejecutivo"
                 type="text"
                 name="ejecutivo"
                 value={nuevaCausa?.ejecutivo ?? ""}
@@ -112,8 +118,9 @@ const ActualizarCausa = () => {
               />
             </div>
             <div className="agregar-causa-item">
-              <label>Fecha de Solicitud:</label>
+              <label for="fechasolicitud">Fecha de Solicitud:</label>
               <input
+                id="fechasolicitud"
                 type="text"
                 name="fechasolicitud"
                 value={nuevaCausa?.fechasolicitud ?? ""}
@@ -121,8 +128,9 @@ const ActualizarCausa = () => {
               />
             </div>
             <div className="agregar-causa-item">
-              <label>Demandado:</label>
+              <label for="demandado">Demandado:</label>
               <input
+                id="demandado"
                 type="text"
                 name="demandado"
                 value={nuevaCausa?.demandado ?? ""}
@@ -130,8 +138,9 @@ const ActualizarCausa = () => {
               />
             </div>
             <div className="agregar-causa-item">
-              <label>RUT:</label>
+              <label for="rut">RUT:</label>
               <input
+                id="rut"
                 type="text"
                 name="rut"
                 value={nuevaCausa?.rut ?? ""}
@@ -139,8 +148,9 @@ const ActualizarCausa = () => {
               />
             </div>
             <div className="agregar-causa-item">
-              <label>Dirección:</label>
+              <label for="direccion">Dirección:</label>
               <input
+                id="direccion"
                 type="text"
                 name="direccion"
                 value={nuevaCausa?.direccion ?? ""}

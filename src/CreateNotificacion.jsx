@@ -60,16 +60,20 @@ const CreateNotificacion = () => {
       <div>
         <h2>Agregar Notificacion</h2>
         {causa ? (
-          <form className="form-agregar-causa" onSubmit={handleSubmit}>
-            <div className="agregar-causa-item">
-              <label>Rol:</label>
-              <p>{notificacion?.rol || ""}</p>
+          <div className="notificacion-card">
+            <div className="notificacion-text">
+              <p className="notificacion-text-label">ROL:</p>
+              <p className="notificacion-text-data">
+                {notificacion?.rol || ""}
+              </p>
             </div>
-            <div className="agregar-causa-item">
-              <label>Caratulado:</label>
-              <p>{notificacion?.caratulado || ""}</p>
+            <div className="notificacion-text">
+              <p className="notificacion-text-label">Caratulado:</p>
+              <p className="notificacion-text-data">
+                {notificacion?.caratulado || ""}
+              </p>
             </div>
-          </form>
+          </div>
         ) : (
           <p>Cargando detalles de la causa...</p>
         )}
@@ -78,8 +82,9 @@ const CreateNotificacion = () => {
         {causa ? (
           <form className="form-agregar-causa" onSubmit={handleSubmit}>
             <div className="agregar-causa-item">
-              <label>Fecha de Notificacion:</label>
+              <label htmlFor="fechaNotificacion">Fecha de Notificacion:</label>
               <input
+                id="fechaNotificacion"
                 type="date"
                 name="fechaNotificacion"
                 value={notificacion?.fechaNotificacion || ""}

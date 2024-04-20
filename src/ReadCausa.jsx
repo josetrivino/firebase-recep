@@ -26,9 +26,7 @@ const ReadCausa = () => {
     setSearchTerm(event.target.value);
     const filtered = causas.filter((causa) => {
       if (causa && causa.causa) {
-        // Convierte el término de búsqueda a minúsculas
         const searchTerm = event.target.value.toLowerCase();
-        // Verifica si algún valor de los campos de la causa incluye el término de búsqueda
         for (const key in causa.causa) {
           if (
             causa.causa.hasOwnProperty(key) &&
@@ -47,10 +45,15 @@ const ReadCausa = () => {
 
   const handleDelete = async (id) => {
     try {
-      await deleteDoc(doc(db, "causas", id));
-      const updatedCausas = causas.filter((causa) => causa.id !== id);
-      setCausas(updatedCausas);
-      setFilteredCausas(updatedCausas);
+      const confirmation = window.confirm(
+        "¿Estás seguro de que quieres eliminar esta causa?"
+      );
+      if (confirmation) {
+        await deleteDoc(doc(db, "causas", id));
+        const updatedCausas = causas.filter((causa) => causa.id !== id);
+        setCausas(updatedCausas);
+        setFilteredCausas(updatedCausas);
+      }
     } catch (error) {
       console.error("Error al eliminar la causa:", error);
     }
@@ -60,6 +63,7 @@ const ReadCausa = () => {
     <>
       <div className="search-container">
         <input
+          id="search-box"
           className="input-search"
           type="text"
           placeholder="Buscar"
